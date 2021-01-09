@@ -1,4 +1,4 @@
-package com.lin.bookstory;
+package com.lin.appapidemo;
 
 import com.github.pagehelper.PageHelper;
 import org.springframework.boot.SpringApplication;
