@@ -1,4 +1,4 @@
-package com.lin.appapidemo.util;
+package com.lin.bookstory.util;
 
 public class ResultMsg {
     public final static String ok="ok";

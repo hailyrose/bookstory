@@ -1,4 +1,4 @@
-package com.lin.appapidemo.util;
+package com.lin.bookstory.util;
 
 import sun.misc.BASE64Encoder;
 

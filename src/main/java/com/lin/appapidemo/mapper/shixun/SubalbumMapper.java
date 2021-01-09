@@ -1,7 +1,7 @@
-package com.lin.appapidemo.mapper.shixun;
+package com.lin.bookstory.mapper.shixun;
 
-import com.lin.appapidemo.model.shixun.Subalbum;
-import com.lin.appapidemo.util.MyMapper;
+import com.lin.bookstory.model.shixun.Subalbum;
+import com.lin.bookstory.util.MyMapper;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.lin.appapidemo.model.shixun;
+package com.lin.bookstory.model.shixun;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

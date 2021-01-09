@@ -1,7 +1,7 @@
-package com.lin.appapidemo.mapper.shixun;
+package com.lin.bookstory.mapper.shixun;
 
-import com.lin.appapidemo.model.shixun.Borrowrecord;
-import com.lin.appapidemo.util.MyMapper;
+import com.lin.bookstory.model.shixun.Borrowrecord;
+import com.lin.bookstory.util.MyMapper;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -24,10 +24,10 @@ public interface BorrowrecordMapper extends MyMapper<Borrowrecord>{
             @Result(column = "time",property = "time"),
             @Result(column = "inttime",property = "inttime"),
             @Result(column="aid",property = "album",
-                    one=@One(select="com.lin.appapidemo.mapper.shixun.AlbumMapper.selectById")
+                    one=@One(select="com.lin.bookstory.mapper.shixun.AlbumMapper.selectById")
             ),
             @Result(column="sid",property = "subalbum",
-                    one=@One(select="com.lin.appapidemo.mapper.shixun.SubalbumMapper.selectById")
+                    one=@One(select="com.lin.bookstory.mapper.shixun.SubalbumMapper.selectById")
             )
     })
     List<Borrowrecord> selectAllInfoByrid(@Param("rid")int rid);
@@ -53,13 +53,13 @@ public interface BorrowrecordMapper extends MyMapper<Borrowrecord>{
             @Result(column = "time",property = "time"),
             @Result(column = "inttime",property = "inttime"),
             @Result(column="rid",property = "reader",
-                    one=@One(select="com.lin.appapidemo.mapper.shixun.ReaderMapper.selectById")
+                    one=@One(select="com.lin.bookstory.mapper.shixun.ReaderMapper.selectById")
             ),
             @Result(column="aid",property = "album",
-                    one=@One(select="com.lin.appapidemo.mapper.shixun.AlbumMapper.selectById")
+                    one=@One(select="com.lin.bookstory.mapper.shixun.AlbumMapper.selectById")
             ),
             @Result(column="sid",property = "subalbum",
-                    one=@One(select="com.lin.appapidemo.mapper.shixun.SubalbumMapper.selectById")
+                    one=@One(select="com.lin.bookstory.mapper.shixun.SubalbumMapper.selectById")
             )
     })
     List<Borrowrecord> selectAllInfoByRaccount(@Param("raccount")String raccount);

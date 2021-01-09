@@ -1,4 +1,4 @@
-package com.lin.appapidemo;
+package com.lin.bookstory;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.lin.appapidemo"))
+                .apis(RequestHandlerSelectors.basePackage("com.lin.bookstory"))
                 .paths(PathSelectors.any())
                 .build();
     }

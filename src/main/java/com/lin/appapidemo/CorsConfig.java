@@ -1,4 +1,4 @@
-package com.lin.appapidemo;
+package com.lin.bookstory;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

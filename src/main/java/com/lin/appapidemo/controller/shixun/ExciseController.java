@@ -1,16 +1,16 @@
-package com.lin.appapidemo.controller.shixun;
+package com.lin.bookstory.controller.shixun;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.lin.appapidemo.mapper.shixun.AlbumMapper;
-import com.lin.appapidemo.mapper.shixun.BorrowrecordMapper;
-import com.lin.appapidemo.mapper.shixun.ReaderMapper;
-import com.lin.appapidemo.mapper.shixun.SubalbumMapper;
-import com.lin.appapidemo.model.shixun.Album;
-import com.lin.appapidemo.model.shixun.Borrowrecord;
-import com.lin.appapidemo.model.shixun.Reader;
-import com.lin.appapidemo.model.shixun.Subalbum;
-import com.lin.appapidemo.util.DateTimeUtil;
+import com.lin.bookstory.mapper.shixun.AlbumMapper;
+import com.lin.bookstory.mapper.shixun.BorrowrecordMapper;
+import com.lin.bookstory.mapper.shixun.ReaderMapper;
+import com.lin.bookstory.mapper.shixun.SubalbumMapper;
+import com.lin.bookstory.model.shixun.Album;
+import com.lin.bookstory.model.shixun.Borrowrecord;
+import com.lin.bookstory.model.shixun.Reader;
+import com.lin.bookstory.model.shixun.Subalbum;
+import com.lin.bookstory.util.DateTimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

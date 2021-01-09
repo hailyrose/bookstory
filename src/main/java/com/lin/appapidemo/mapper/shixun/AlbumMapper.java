@@ -1,8 +1,8 @@
-package com.lin.appapidemo.mapper.shixun;
+package com.lin.bookstory.mapper.shixun;
 
-import com.lin.appapidemo.model.shixun.Album;
-import com.lin.appapidemo.model.shixun.Borrowrecord;
-import com.lin.appapidemo.util.MyMapper;
+import com.lin.bookstory.model.shixun.Album;
+import com.lin.bookstory.model.shixun.Borrowrecord;
+import com.lin.bookstory.util.MyMapper;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -20,7 +20,7 @@ public interface AlbumMapper extends MyMapper<Album>{
             @Result(column = "descri",property = "descri"),
             @Result(column = "time",property = "time"),
             @Result(column="aid",property = "subalbums",
-                    many=@Many(select="com.lin.appapidemo.mapper.shixun.SubalbumMapper.selectByAid")
+                    many=@Many(select="com.lin.bookstory.mapper.shixun.SubalbumMapper.selectByAid")
             )
     })
     Album selectById(@Param("aid") int aid);
@@ -47,7 +47,7 @@ public interface AlbumMapper extends MyMapper<Album>{
             @Result(column = "descri",property = "descri"),
             @Result(column = "time",property = "time"),
             @Result(column="aid",property = "subalbums",
-                    many=@Many(select="com.lin.appapidemo.mapper.shixun.SubalbumMapper.selectByAid")
+                    many=@Many(select="com.lin.bookstory.mapper.shixun.SubalbumMapper.selectByAid")
             )
     })
     List<Album> selectByTitle(@Param("title")String title);

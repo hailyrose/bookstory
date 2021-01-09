@@ -1,4 +1,4 @@
-package com.lin.appapidemo.util;
+package com.lin.bookstory.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

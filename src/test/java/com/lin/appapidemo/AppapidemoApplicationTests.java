@@ -1,4 +1,4 @@
-package com.lin.appapidemo;
+package com.lin.bookstory;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AppapidemoApplicationTests {
+public class bookstoryApplicationTests {
 	@Test
 	public void contextLoads() {
 
