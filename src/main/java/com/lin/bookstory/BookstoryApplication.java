@@ -1,4 +1,4 @@
-package com.lin.appapidemo;
+package com.lin.bookstory;
 
 import com.github.pagehelper.PageHelper;
 import org.springframework.boot.SpringApplication;
@@ -13,10 +13,10 @@ import java.util.Properties;
 @SpringBootApplication
 @EnableCaching
 @ServletComponentScan
-public class bookstoryApplication {
+public class BookstoryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(bookstoryApplication.class, args);
+		SpringApplication.run(BookstoryApplication.class, args);
 	}
 	//配置mybatis的分页插件pageHelper
 	@Bean
